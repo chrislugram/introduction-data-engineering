@@ -18,4 +18,17 @@ docker pull postgress
 ```
 docker run --name base-postgres -p 5455:5432 -e POSTGRES_USER=postgresUser -e POSTGRES_PASSWORD=postgresPW -e POSTGRES_DB=postgresDB -d postgres
 ```
-- While the image is running, using pgAdmin for see the database and test the connection
+- While the image is running, using pgAdmin for see the database and test the connection.
+
+If it's the first time that create the images, use this for table creation:
+
+```
+CREATE TABLE CARSALESTABLE (
+	price int NOT NULL,
+	mileage int NOT NULL,
+	engType VARCHAR ( 20 ) NOT NULL,
+	year int NOT NULL,
+	model VARCHAR ( 30 ) NOT NULL
+);
+```
+  
