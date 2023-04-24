@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 requests = "==2.28.2"
 beautifulsoup4 = "==4.12.2"
+selenium = "==4.9.0"
+pandas = "==2.0.1"
+pyarrow = "==11.0.0"
+fastparquet = "==2023.2.0"
 
 [dev-packages]
 
